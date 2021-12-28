@@ -12,7 +12,7 @@ public class Main {
         //task3();
         //task4();
         //task5();
-        //task6();
+        task6();
 
     }
 
@@ -116,6 +116,20 @@ public class Main {
 
     }
 
+    public static void task6() {
 
+        int deliveryDistance = 40;
+        int deliveriDay = 1;
+
+
+
+        if (deliveryDistance <= 20) {
+            System.out.println("Потребуется дней:" + deliveriDay);
+        } else if (deliveryDistance >= 20 && deliveryDistance <= 60) { deliveriDay +=1;
+            System.out.println("Потребуется дней:" + deliveriDay);
+        } else if (deliveryDistance >= 60 && deliveryDistance <= 100) { deliveriDay +=2;
+            System.out.println("Потребуется дней:" + deliveriDay);
+        }
+    }
 }
 
