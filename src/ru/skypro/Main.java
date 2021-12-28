@@ -7,11 +7,12 @@ public class Main {
     public static void main(String[] args) {
 
 
-        task1();
-        task2();
-        task3();
-        task4();
-        task5();
+        //task1();
+        //task2();
+        //task3();
+        //task4();
+        //task5();
+        //task6();
 
     }
 
@@ -49,13 +50,13 @@ public class Main {
 
     public static void task3() {
 
-        int year = 2024;
 
-        if (year % 400 == 0 || year % 4 == 0) {
+        int year = 2027;
+
+        if( (year % 400 == 0 && year % 100 != 0) || (year % 4 == 0)) {
             System.out.println(year + " является високосным годом");
-        } else if (year % 100 == 0) {
-            System.out.println(year + " не является високосным годом");
-        } else {
+        }
+        else {
             System.out.println(year + " не является високосным годом");
         }
     }
@@ -114,6 +115,7 @@ public class Main {
 
 
     }
+
 
 }
 
