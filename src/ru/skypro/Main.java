@@ -7,21 +7,17 @@ public class Main {
     public static void main(String[] args) {
 
 
-        //task1();
-        //task2();
-        //task3();
-        //task4();
-        //task5();
-        // task6();
-        // task7();
-        // task8();
-
+        task1();
+        task2();
+        task3();
+        task4();
+        task5();
 
     }
 
     public static void task1() {
 
-        int iOs = 2;
+        int iOs = 0;
         int android = 1;
 
         if (iOs == 0) {
@@ -36,7 +32,7 @@ public class Main {
 
         int iOs = 0;
         int android = 1;
-        int yearOfRelease = 2013;
+        int yearOfRelease = 2015;
 
         if (iOs == 0 && yearOfRelease >= 2015) {
             System.out.println("Установите версию приложения для iOS по ссылке");
@@ -53,14 +49,12 @@ public class Main {
 
     public static void task3() {
 
-        int year = 2021;
+        int year = 2024;
 
-        if (year % 400 == 0) {
+        if (year % 400 == 0 || year % 4 == 0) {
             System.out.println(year + " является високосным годом");
         } else if (year % 100 == 0) {
             System.out.println(year + " не является високосным годом");
-        } else if (year % 4 == 0) {
-            System.out.println(year + " является високосным годом");
         } else {
             System.out.println(year + " не является високосным годом");
         }
@@ -120,7 +114,6 @@ public class Main {
 
 
     }
-
 
 }
 
